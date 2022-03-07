@@ -1,0 +1,115 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', 'Helvetica', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #111;
+}
+
+svg{
+    font-weight: 900;
+    margin-right: .5rem;
+    font-size: 1.7rem;
+}
+
+.header__nombre{
+    font-size: 1.4rem;
+}
+
+h2{
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.main{
+    margin: 1rem;
+}
+
+section{
+    margin: 1rem;
+}
+
+.main__section-material{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__section-material > div{
+    padding: 1.5rem 0 1.5rem  1.5rem;
+    display: flex;
+    border: 1px solid #111;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+    margin: 1.2rem;
+
+}
+
+.main__section-material h3{
+    flex: 1 0 100%;
+}
+
+.main__texto{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    flex: 1 1 40%;
+}
+
+.main__sabor p {
+    flex: 1 0 30%
+}
+
+.main__texto span{
+    display: block;
+}
+
+.restante{
+    font-weight: bold;
+}
+
+.main__sabor{
+    flex:1 0 50%;
+}
+
+#cliente{
+    border-collapse: collapse;
+    padding: 0.6rem;
+    width: 100%;
+}
+
+#cliente td, #cliente th{
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+}
+
+thead{
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+tbody tr:nth-child(even){
+    background-color: #d2d2d2;
+}
+
+tbody tr:hover{
+    background-color: #aaa;
+}
+
+.main__section-pedididos{
+    margin-bottom: 2rem;
+}
+
+.footer{
+    padding: 5rem 5rem 1rem 5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}

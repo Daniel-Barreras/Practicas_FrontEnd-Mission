@@ -1,0 +1,259 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GalacticCakes</title>
+    <script src="https://kit.fontawesome.com/9a739e49cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>GalactiCakes</h1><i class="fa-solid fa-cake-candles"></i>
+      </div>
+      <ul class="navbar">
+        <a href="#bienvenida"><li class="navbar__item">Bienvenida</li></a>
+        <a href="#menu"><li class="navbar__item">Menu</li></a>
+        <a href="#pedido"><li class="navbar__item">Pedidos</li></a>
+        <a href="#contacto"><li class="navbar__item">Contacto</li></a>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="primer__section" id="bienvenida">
+        <h1 class="title">Bienvenid@!</h1>
+        <br /><br />
+      </section>
+      <section class="menu" id="menu">
+        <div class="menu__grid">
+          <div class="menu__grid-sabor">
+            <h3>Pasteles</h3>
+            <p class="menu__texto">
+              <span class="nombre">Chocolate</span>
+              <span class="precio">120</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Vainilla</span>
+              <span class="precio">120</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Fresa</span>
+              <span class="precio">120</span>
+            </p>
+            <p class="menu__texto">
+                <span class="nombre">Nuez</span>
+                <span class="precio">150</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Nebulosa(Pastel helado)</span>
+              <span class="precio">200</span>
+            </p>
+            <p class="menu__texto">
+                <span class="nombre">Via Lactea (3 leches)</span>
+                <span class="precio">180</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Andromeda(4 leches)</span>
+              <span class="precio">200</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Estrella(Cheesecake)</span>
+              <span class="precio">220</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Pulsar(Mora azul)</span>
+              <span class="precio">200</span>
+            </p>
+            <p class="menu__texto">
+              <span class="nombre">Quasar(Centro de chocolate, rodeado de fresa, vainilla y nuez)</span>
+              <span class="precio">350</span>
+            </p>
+          </div>
+          <div class="menu__logo" id="menu__logo">
+              <img src="https://icon-library.com/images/menus-icon/menus-icon-6.jpg" alt="Menu">
+          </div>
+          <div class="menu__grid-extra">
+              <h3>Extra</h3>
+              <p class="menu__texto">
+                  <span class="nombre">Gallletas</span>
+                <span class="precio">25</span>
+            </p>
+              <p class="menu__texto">
+                  <span class="nombre">Bollito</span>
+                <span class="precio">15 c/u</span>
+            </p>
+              <p class="menu__texto">
+                  <span class="nombre">Brownie</span>
+                <span class="precio">15 c/u</span>
+            </p>
+              <p class="menu__texto">
+                  <span class="nombre">Barra de chocolate</span>
+                <span class="precio">30 c/u</span>
+            </p>
+          </div>
+          <div class="menu__grid-adornos">
+              <h3>Adornos</h3>
+              <p class="menu__texto">
+                  <span class="nombre">Bombones</span>
+                <span class="precio">30</span>
+            </p>
+              <p class="menu__texto">
+                  <span class="nombre">Cerezas</span>
+                <span class="precio">35</span>
+            </p>
+            <p class="menu__texto">
+                <span class="nombre">Fresas</span>
+              <span class="precio">35</span>
+          </p>
+              <p class="menu__texto">
+                  <span class="nombre">Barquillos de chocolate</span>
+                <span class="precio">40</span>
+            </p>
+              <p class="menu__texto">
+                  <span class="nombre">Velas mágicas</span>
+                <span class="precio">50</span>
+            </p>
+          </div>
+          <div class="menu__grid-bebidas">
+            <h3>Bebidas</h3>
+            <p class="menu__texto">
+                <span class="nombre">Café americano</span>
+              <span class="precio">25</span>
+          </p>
+            <p class="menu__texto">
+                <span class="nombre">Capuccino</span>
+              <span class="precio">30</span>
+          </p>
+            <p class="menu__texto">
+                <span class="nombre">Moca</span>
+              <span class="precio">40</span>
+          </p>
+            <p class="menu__texto">
+                <span class="nombre">Malteada</span>
+              <span class="precio">40</span>
+          </p>
+          </div>
+        </div>
+      </section>
+      <section class="pedido" id="pedido">
+          <h2>Haga aquí su pedido</h2><br><br>
+          <form action="" class="order__form">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Escriba su nombre">
+            <label for="numero">Teléfono</label>
+            <input type="number" name="numero" placeholder="Escriba su número de teléfono">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" placeholder="Escriba su Email">
+            <label for="descripcion">Si lo necesita, describa el pastel de su preferencia</label>
+            <textarea name="descripcion" id="descripcion" cols="50" rows="10"></textarea>
+
+            <label for="Sabor">Seleccione el sabor de su pastel</label>
+            <select name="Sabor" id="" required>
+                <option value="default" selected disabled>Primer Sabor</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vainilla">Vainilla</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Nuez">Nuez</option>
+                <option value="Nebulosa">Nebulosa</option>
+                <option value="Via Lactea">Via Lactea</option>
+                <option value="Andromeda">Andromeda</option>
+                <option value="Pastel">Pastel</option>
+                <option value="Pulsar">Pulsar</option>
+                <option value="Quasar">Quasar</option>
+            </select>
+
+            <label for="Sabor">Seleccione el segundo sabor de su pastel</label>
+            <select name="Sabor2" id="">
+                <option value="default" selected disabled>Segundo Sabor</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vainilla">Vainilla</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Nuez">Nuez</option>
+                <option value="Nebulosa">Nebulosa</option>
+                <option value="Via Lactea">Via Lactea</option>
+                <option value="Andromeda">Andromeda</option>
+                <option value="Pastel">Pastel</option>
+                <option value="Pulsar">Pulsar</option>
+                <option value="Quasar">Quasar</option>
+            </select>
+
+            <label for="Sabor">Seleccione el tercer sabor de su pastel</label>
+            <select name="Sabor3" id="">
+                <option value="default" selected disabled>Tercer Sabor</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vainilla">Vainilla</option>
+                <option value="Fresa">Fresa</option>
+                <option value="Nuez">Nuez</option>
+                <option value="Nebulosa">Nebulosa</option>
+                <option value="Via Lactea">Via Lactea</option>
+                <option value="Andromeda">Andromeda</option>
+                <option value="Pastel">Pastel</option>
+                <option value="Pulsar">Pulsar</option>
+                <option value="Quasar">Quasar</option>
+            </select>
+            
+            <label for="Adorno">Seleccione el adorno de su pastel</label>
+            <select name="Adorno" id="" required>
+                <option value="default" selected disabled>Adorno</option>
+                <option value="Bombones">Bombones</option>
+                <option value="Cerezas">Cerezas</option>
+                <option value="Fresas">Fresas</option>
+                <option value="Barquillos de chocolate">Barquillos de chocolate</option>
+                <option value="Velas mágicas">Velas mágicas</option>
+            </select>
+            
+            <label for="Adorno">Seleccione el segundo adorno de su pastel</label>
+            <select name="Adorno" id="" required>
+                <option value="default" selected disabled>Segundo adorno</option>
+                <option value="Bombones">Bombones</option>
+                <option value="Cerezas">Cerezas</option>
+                <option value="Fresas">Fresas</option>
+                <option value="Barquillos de chocolate">Barquillos de chocolate</option>
+                <option value="Velas mágicas">Velas mágicas</option>
+            </select>
+
+            <label for="Adorno">Seleccione el tercer adorno de su pastel</label>
+            <select name="Adorno" id="" required>
+                <option value="default" selected disabled>Tercer dorno</option>
+                <option value="Bombones">Bombones</option>
+                <option value="Cerezas">Cerezas</option>
+                <option value="Fresas">Fresas</option>
+                <option value="Barquillos de chocolate">Barquillos de chocolate</option>
+                <option value="Velas mágicas">Velas mágicas</option>
+            </select>
+
+            <input type="reset" value="Limpiar">
+            <input type="submit" name="enviar">
+          </form>
+      </section>
+    </main>
+
+    <footer id="contacto">
+        <p class="footer__texto">
+            <ul>
+                Números de teléfono:
+                <li>664 6859 215</li>
+                <li>664 4327106</li>
+            </ul>
+        </p>
+        <p class="footer__texto">
+            <ul>
+                Dirección:
+                <li>Av. Miguel Hidalgo. No.1586. Hermosillo, Sonora.</li>
+            </ul>
+        </p>
+        <p class="footer__texto">
+            <ul>
+                Horarios:
+                <li>Lunes: 8:00 - 18:00</li>
+                <li>Martes: <b>Cerrado</b></li>
+                <li>Miercoles: 8:00 - 18:00</li>
+                <li>Jueves: <b>Cerrado</b></li>
+                <li>viernes: 8:00 - 18:00</li>
+                <li>Sabado: 9:00 - 20:00</li>
+                <li>Domingo: 9:00 - 20:00</li>
+            </ul>
+        </p>
+    </footer>
+  </body>
+</html>
